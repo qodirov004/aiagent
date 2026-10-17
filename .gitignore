@@ -1,22 +1,28 @@
-# Environment
-.env
-*.env.local
-
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
 *.egg-info/
+*.egg
 dist/
 build/
-eggs/
-*.egg
+.eggs/
 
-# Virtual environment
-venv/
-.venv/
-env/
+# Django
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+*.log
+
+# Environment & Sessions
+.env
+*.session
+*.session-journal
+*.session.journal
+
+# Node
+node_modules/
+dist/
 
 # IDE
 .vscode/
@@ -24,25 +30,11 @@ env/
 *.swp
 *.swo
 
-# Django
-*.sqlite3
-db.sqlite3
-staticfiles/
-media/
-
-# Testing
-.pytest_cache/
-htmlcov/
-.coverage
-coverage.xml
-
 # OS
-.DS_Store
 Thumbs.db
+.DS_Store
 
-# Celery
-celerybeat-schedule
-celerybeat.pid
-
-# Sentry
-.sentryclirc
+# Virtual Environment
+venv/
+.venv/
+env/
